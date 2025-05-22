@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Métadonnées de base -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futur Digital - Agence Web & Visibilité Locale</title>
+    <!-- Feuilles de style externes (Bootstrap, Font Awesome, Google Fonts, AOS, CSS personnalisé) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barre de navigation fixe en haut de page -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo de la marque -->
+            <a class="navbar-brand" href="#">
+                <div class="logo-container">
+                    <div class="logo-icon">FD</div>
+                    <span class="logo-text">Futur Digital</span>
+                </div>
+            </a>
+            <!-- Bouton pour menu mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Liens de navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#qui-sommes-nous">Qui sommes-nous</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nos-services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <!-- Numéro de téléphone affiché sur desktop -->
+                <div class="contact-phone d-none d-lg-flex">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <span>01 00 00 00 00</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero avec carousel d'accueil -->
+    <section id="hero" class="hero-section">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 : Présentation générale -->
+                <div class="carousel-item active">
+                    <div class="carousel-overlay"></div>
+                    <div class="graphic-bg graphic-bg-1">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 data-aos="fade-up" data-aos-delay="100">TRANSFORMEZ VOTRE PRÉSENCE DIGITALE</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Solutions web innovantes pour votre entreprise</p>
+                        <a href="#contact" class="btn btn-primary btn-lg mt-3" data-aos="fade-up" data-aos-delay="300">Contactez-nous</a>
+                    </div>
+                </div>
+                <!-- Slide 2 : Développement web -->
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <div class="graphic-bg graphic-bg-2">
+                        <div class="code-graphic">
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 data-aos="fade-up" data-aos-delay="100">DÉVELOPPEMENT WEB SUR MESURE</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Des sites web performants et responsives</p>
+                        <a href="#nos-services" class="btn btn-primary btn-lg mt-3" data-aos="fade-up" data-aos-delay="300">Nos services</a>
+                    </div>
+                </div>
+                <!-- Slide 3 : Référencement et visibilité locale -->
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <div class="graphic-bg graphic-bg-3">
+                        <!-- Illustration ou fond graphique -->
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 data-aos="fade-up" data-aos-delay="100">VISIBILITÉ LOCALE GARANTIE</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Optimisez votre référencement et votre présence en ligne</p>
+                        <div class="search-container" data-aos="fade-up" data-aos-delay="250">
+                            <input type="text" placeholder="Rechercher...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="#qui-sommes-nous" class="btn btn-primary btn-lg mt-3" data-aos="fade-up" data-aos-delay="300">EN SAVOIR PLUS</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Contrôles du carousel (précédent/suivant) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+            <!-- Indicateurs de position du carousel -->
+            <div class="carousel-indicators custom-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container main-content">
+        <!-- Section "Qui sommes-nous" : présentation de l'agence -->
+        <section id="qui-sommes-nous" class="section-padding">
+            <div class="section-header text-center mb-5">
+                <h6 class="text-primary fw-bold" data-aos="fade-up">À PROPOS DE NOUS</h6>
+                <h2 data-aos="fade-up" data-aos-delay="100">Qui sommes-nous ?</h2>
+                <div class="divider" data-aos="fade-up" data-aos-delay="150"></div>
+            </div>
+            <div class="row align-items-center">
+                <!-- Texte de présentation -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <p class="lead mb-4">Futur Digital est une agence web spécialisée dans la création de solutions digitales innovantes pour les entreprises locales et nationales.</p>
+                    <p class="mb-4">Depuis plus de 10 ans, notre équipe d'experts accompagne les entreprises dans leur transformation digitale avec des solutions sur mesure qui répondent parfaitement à leurs besoins.</p>
+                    <p class="mb-4">Notre approche combine créativité, expertise technique et stratégie marketing pour offrir des résultats concrets et mesurables.</p>
+                    <!-- Chiffres clés -->
+                    <div class="d-flex mt-4">
+                        <div class="me-4">
+                            <h3 class="counter">250+</h3>
+                            <p>Projets réalisés</p>
+                        </div>
+                        <div class="me-4">
+                            <h3 class="counter">98%</h3>
+                            <p>Clients satisfaits</p>
+                        </div>
+                        <div>
+                            <h3 class="counter">10+</h3>
+                            <p>Années d'expérience</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary mt-4">En savoir plus <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+                <!-- Illustration graphique de l'équipe -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-graphic">
+                        <div class="team-graphic">
+                            <!-- Membres de l'équipe (avatars/icônes) -->
+                            <div class="team-member team-member-1">
+                                <div class="member-avatar"><i class="fas fa-user"></i></div>
+                                <div class="member-info">
+                                    <div class="member-name"></div>
+                                    <div class="member-title"></div>
+                                </div>
+                            </div>
+                            <div class="team-member team-member-2">
+                                <div class="member-avatar"><i class="fas fa-user"></i></div>
+                                <div class="member-info">
+                                    <div class="member-name"></div>
+                                    <div class="member-title"></div>
+                                </div>
+                            </div>
+                            <div class="team-member team-member-3">
+                                <div class="member-avatar"><i class="fas fa-user"></i></div>
+                                <div class="member-info">
+                                    <div class="member-name"></div>
+                                    <div class="member-title"></div>
+                                </div>
+                            </div>
+                            <div class="team-member team-member-4">
+                                <div class="member-avatar"><i class="fas fa-user"></i></div>
+                                <div class="member-info">
+                                    <div class="member-name"></div>
+                                    <div class="member-title"></div>
+                                </div>
+                            </div>
+                            <!-- Badge d'expérience -->
+                            <div class="experience-badge">
+                                <span>10+</span>
+                                <small>ans d'expérience</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "Nos services" : présentation des offres -->
+        <section id="nos-services" class="section-padding bg-light">
+            <div class="section-header text-center mb-5">
+                <h6 class="text-primary fw-bold" data-aos="fade-up">CE QUE NOUS PROPOSONS</h6>
+                <h2 data-aos="fade-up" data-aos-delay="100">Nos services</h2>
+                <div class="divider" data-aos="fade-up" data-aos-delay="150"></div>
+            </div>
+            <div class="row">
+                <!-- Illustration graphique (mockups d'appareils) -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="services-graphic">
+                        <div class="device-mockup">
+                            <div class="laptop">
+                                <div class="laptop-screen">
+                                    <div class="screen-content">
+                                        <div class="nav-mockup"></div>
+                                        <div class="content-mockup">
+                                            <div class="content-block"></div>
+                                            <div class="content-block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="laptop-base"></div>
+                            </div>
+                            <div class="phone">
+                                <div class="phone-screen">
+                                    <div class="screen-content-mobile">
+                                        <div class="nav-mockup-mobile"></div>
+                                        <div class="content-mockup-mobile"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Liste des services proposés -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="service-content">
+                            <h4>Développement Web</h4>
+                            <p>Sites vitrines, e-commerce, applications web sur mesure adaptés à tous les appareils.</p>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon"><i class="fas fa-search"></i></div>
+                        <div class="service-content">
+                            <h4>Référencement SEO</h4>
+                            <p>Optimisation pour les moteurs de recherche, stratégie de contenu et référencement local.</p>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                        <div class="service-content">
+                            <h4>Marketing Digital</h4>
+                            <p>Campagnes publicitaires, réseaux sociaux, email marketing et stratégie de contenu.</p>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <div class="service-content">
+                            <h4>Design Graphique</h4>
+                            <p>Identité visuelle, logos, chartes graphiques et supports de communication.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "Chiffres clés" : statistiques de l'agence -->
+        <section class="stats-section section-padding">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4 mb-md-0" data-aos="fade-up">
+                    <div class="stat-item">
+                        <i class="fas fa-users mb-3"></i>
+                        <h3 class="counter">250+</h3>
+                        <p>Clients satisfaits</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                        <i class="fas fa-project-diagram mb-3"></i>
+                        <h3 class="counter">500+</h3>
+                        <p>Projets réalisés</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <i class="fas fa-trophy mb-3"></i>
+                        <h3 class="counter">15+</h3>
+                        <p>Récompenses</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <i class="fas fa-coffee mb-3"></i>
+                        <h3 class="counter">1000+</h3>
+                        <p>Tasses de café</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "Contact" : formulaire et infos de contact -->
+        <section id="contact" class="section-padding">
+            <div class="section-header text-center mb-5">
+                <h6 class="text-primary fw-bold" data-aos="fade-up">PARLONS DE VOTRE PROJET</h6>
+                <h2 data-aos="fade-up" data-aos-delay="100">Contactez-nous</h2>
+                <div class="divider" data-aos="fade-up" data-aos-delay="150"></div>
+            </div>
+            <div class="row">
+                <!-- Formulaire de contact -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <form id="contactForm" class="contact-form">
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <input type="text" class="form-control" placeholder="Nom" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Prénom" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Téléphone">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Sujet" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Informations de contact et illustration graphique -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h5>Notre adresse</h5>
+                                <p>690 rue Yves Kermen, 92100 Boulogne-Billancourt</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>contact@futurdigital.fr</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h5>Téléphone</h5>
+                                <p>01 45 32 95 05</p>
+                            </div>
+                        </div>
+                        <!-- Illustration graphique de la carte -->
+                        <div class="map-graphic mt-4">
+                            <div class="map-pin"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="map-road map-road-1"></div>
+                            <div class="map-road map-road-2"></div>
+                            <div class="map-road map-road-3"></div>
+                            <div class="map-road map-road-4"></div>
+                            <div class="map-building map-building-1"></div>
+                            <div class="map-building map-building-2"></div>
+                            <div class="map-building map-building-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Pied de page (footer) avec liens, réseaux sociaux et coordonnées -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo et description -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-logo">
+                        <div class="logo-icon">FD</div>
+                        <span class="logo-text">Futur Digital</span>
+                    </div>
+                    <p>Futur Digital est une agence web spécialisée dans la création de solutions digitales innovantes pour les entreprises locales et nationales.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Liens rapides -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5>Liens rapides</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#qui-sommes-nous">À propos</a></li>
+                        <li><a href="#nos-services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Liste des services -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Développement Web</a></li>
+                        <li><a href="#">Référencement SEO</a></li>
+                        <li><a href="#">Marketing Digital</a></li>
+                        <li><a href="#">Design Graphique</a></li>
+                    </ul>
+                </div>
+                <!-- Coordonnées de contact -->
+                <div class="col-lg-3">
+                    <h5>Contact</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 690 rue Yves Kermen, 92100 Boulogne-Billancourt</li>
+                        <li><i class="fas fa-phone-alt"></i> 01 00 00 00 00</li>
+                        <li><i class="fas fa-envelope"></i> contact@futurdigital.fr</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row footer-bottom">
+                <div class="col-md-6">
+                    <p>© 2025 Futur Digital. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Mentions légales | Politique de confidentialité</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut de page -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts JS (Bootstrap, AOS, JS personnalisé) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
