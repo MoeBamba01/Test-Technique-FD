@@ -1,9 +1,9 @@
-# Démarche Technique - Landing Page Futur Digital
+# Démarche Technique - Landing Page Total Digital
 
 ## Introduction
 
 Bonjour !  
-Dans ce document, je partage avec vous, en toute transparence, la démarche technique que j’ai suivie pour créer la landing page de Futur Digital, dans le cadre du test technique. J’ai voulu allier rigueur, créativité et plaisir du développement pour proposer un résultat à la fois moderne et efficace.
+Dans ce document, je partage avec vous, en toute transparence, la démarche technique que j’ai suivie pour créer la landing page de Total Digital, dans le cadre du test technique. J’ai voulu allier rigueur, créativité et plaisir du développement pour proposer un résultat à la fois moderne et efficace.
 
 ## Mes choix technologiques
 
@@ -14,7 +14,7 @@ J’ai misé sur une structure claire et sémantique, en utilisant des balises c
 Pour le style, j’ai utilisé des variables CSS afin d’assurer une cohérence graphique et de simplifier les futures évolutions. J’ai beaucoup joué avec Flexbox et Grid pour obtenir des mises en page dynamiques et responsives. Les animations et transitions apportent une touche de vie à l’ensemble, tout en restant sobres. Enfin, grâce aux media queries, la page s’adapte à tous les écrans, du mobile au desktop.
 
 ### Bootstrap 5
-J’ai choisi Bootstrap pour gagner du temps sur la partie responsive et profiter de ses composants prêts à l’emploi (carousel, navbar, etc.), tout en les personnalisant pour coller à l’identité de Futur Digital. Cela m’a permis de me concentrer sur la valeur ajoutée graphique et fonctionnelle.
+J’ai choisi Bootstrap pour gagner du temps sur la partie responsive et profiter de ses composants prêts à l’emploi (carousel, navbar, etc.), tout en les personnalisant pour coller à l’identité de Total Digital. Cela m’a permis de me concentrer sur la valeur ajoutée graphique et fonctionnelle.
 
 ### JavaScript
 Côté interactions, j’ai intégré la librairie AOS pour les animations au scroll, et j’ai écrit quelques scripts pour :
@@ -50,7 +50,7 @@ J’ai testé la page sur les principaux navigateurs (Chrome, Firefox, Safari, E
 ### Créer des éléments graphiques sans images
 **Défi :** Rendre la page attractive sans recourir à des images externes, pour simplifier le développement et éviter tout souci de copyright.  
 **Solution :** J’ai volontairement choisi une approche simple : pas d’images importées, uniquement des dégradés, formes CSS et animations pour donner du relief et du dynamisme. Cela m’a permis de rester créatif tout en garantissant la légèreté et la performance du site.  
-Je me suis d’ailleurs inspiré subtilement de l’univers graphique du site officiel de Futur Digital, afin de rester cohérent avec l’identité visuelle de la marque, tout en apportant ma touche personnelle.
+Je me suis d’ailleurs inspiré subtilement de l’univers graphique du site officiel de Total Digital, afin de rester cohérent avec l’identité visuelle de la marque, tout en apportant ma touche personnelle.
 
 ### Responsive design
 **Défi :** Offrir une expérience fluide sur tous les appareils.  
